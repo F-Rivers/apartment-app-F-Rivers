@@ -16,7 +16,6 @@ import {
 class App extends Component {
   render() {
     return (
-      
         <Router>
           <Header {...this.props} />
           <Switch>
@@ -29,9 +28,6 @@ class App extends Component {
           </Switch>
           <Footer/>
         </Router>
-        
-        
-  
     )
   }
 }
