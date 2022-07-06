@@ -113,11 +113,14 @@ rails s
 
 See what is available already in the application.
 - What can a USER do? 
+  - Sign in/out 
+
 - What views (pages, components) are available?
+  - See a home, Edit, Index, New, and Show page 
 
-## 🏡 Apartment Resource
+## 🏡 Apartment Resource    
 The Devise User model is going to have an association with the Apartment model. In this situation, the User will have many apartments and the Apartments will belong to a User.
-
+          
 ```bash
 rails generate resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string image:text user_id:integer
 rails db:migrate
