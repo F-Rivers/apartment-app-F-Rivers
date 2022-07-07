@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
-import { Nav, 
+import { NavLink } from 'react-router-dom'
+import { 
+  Nav, 
   NavItem, 
   Navbar, 
   NavbarBrand, 
   NavbarToggler, 
   Collapse, 
-  NavLink, 
   } from 'reactstrap';
 
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false
     };
   }
-  toggle() {
+  toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });
@@ -36,7 +36,7 @@ class Header extends Component {
           expand="md"
           light
         >
-          <NavbarBrand href="/">
+          <NavbarBrand to="/">
           Apartments Department
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -46,13 +46,13 @@ class Header extends Component {
             navbar
             >
               <NavItem>
-                <NavLink href="/">
-                  Home
+                <NavLink to="/">
+                  Home   
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/apartmentindex">
-                  See All
+                <NavLink to="/apartmentindex">
+                  See All 
                 </NavLink>
               </NavItem>
               {logged_in &&
@@ -71,7 +71,7 @@ class Header extends Component {
                 </NavItem>
               }
               <NavItem>
-                <NavLink href="https://github.com/F-Rivers">
+                <NavLink to="https://github.com/F-Rivers">
                   My GitHub
                 </NavLink>
               </NavItem>

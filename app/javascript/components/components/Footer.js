@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Nav, 
+import { NavLink } from 'react-router-dom'
+import { 
+  Nav, 
   NavItem, 
   Navbar, 
   NavbarBrand, 
-  NavbarToggler, 
   Collapse, 
-  NavLink, 
   } from 'reactstrap';
 
 export default class Footer extends Component {
@@ -18,22 +18,21 @@ export default class Footer extends Component {
           fixed=""
           light
         >
-          <NavbarBrand href="/">
+          <NavbarBrand to="/">
             Wayne Enterprise
           </NavbarBrand>
-          <NavbarToggler onClick={function noRefCheck(){}} />
           <Collapse navbar>
             <Nav
               className="me-auto"
               navbar
             >
               <NavItem>
-                <NavLink href="/">
+                <NavLink to='/'>
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/F-Rivers">
+                <NavLink to="https://github.com/F-Rivers">
                   GitHub
                 </NavLink>
               </NavItem>
