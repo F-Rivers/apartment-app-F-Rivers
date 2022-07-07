@@ -7,6 +7,7 @@ import ApartmentShow from './pages/ApartmentShow'
 import ApartmentNew from './pages/ApartmentNew'
 import ApartmentEdit from './pages/ApartmentEdit'
 import NotFound from './pages/NotFound'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +19,7 @@ class App extends Component {
     return (
         <Router>
           <Header {...this.props} />
+          <br></br>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/apartmentindex" component={ApartmentIndex} />
@@ -26,6 +28,7 @@ class App extends Component {
             <Route path="/apartmentedit" component={ApartmentEdit} />
             <Route component={NotFound}/>
           </Switch>
+          <br></br>
           <Footer/>
         </Router>
     )

@@ -17,7 +17,6 @@ describe("When Home renders", () => {
   it("displays a welcome message", () => {
     const home = shallow(<Home />)
     const homeHeading = home.find("h2")
-    console.log("HOME", homeHeading.debug());
     expect(homeHeading.text()).toEqual("Welcome to the Apartment Department")
   })
 })

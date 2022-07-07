@@ -14,9 +14,9 @@ import Footer from './Footer'
 Enzyme.configure({ adapter: new Adapter() })
 
 describe("When Footer renders", () => {
-  it("displays a heading", () => {
+  it("displays a footer navbar", () => {
     const footer = shallow(<Footer />)
-    const footerHeading = footer.find("h3")
-    expect(footerHeading.text()).toEqual("This should fail")
+    const footerHeading = footer.find("footer")
+    expect(footerHeading.text()).toEqual("<Navbar />")
   })
 })
