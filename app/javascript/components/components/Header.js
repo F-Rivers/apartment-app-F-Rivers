@@ -36,11 +36,9 @@ class Header extends Component {
           expand="md"
           light
         >
-          <Nav className='header-links'>
-          <NavLink to='/'>
-            <img src={CozyLogo} alt="Image of reclining alligator: click to go home" id='cozy_drivergator'/>
-          </NavLink>
-          </Nav>
+          <NavbarBrand href="/">
+          Apartments Department
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav
