@@ -71,7 +71,7 @@ class Header extends Component {
                 </NavItem>
               }
               <NavItem>
-                <NavLink to="https://github.com/F-Rivers">
+                <NavLink href="https://github.com/F-Rivers">
                   My GitHub
                 </NavLink>
               </NavItem>

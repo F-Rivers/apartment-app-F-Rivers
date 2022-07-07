@@ -209,3 +209,5 @@ RSpec.describe "Apartments", type: :request do
   end
 end
 ```
+app > javascript > components > components > header.js 
+the navlink to your github might need to change to a href and not a to (L.75)

@@ -7,7 +7,6 @@ import ApartmentShow from './pages/ApartmentShow'
 import ApartmentNew from './pages/ApartmentNew'
 import ApartmentEdit from './pages/ApartmentEdit'
 import NotFound from './pages/NotFound'
-
 import {
   BrowserRouter as Router,
   Route,
@@ -15,6 +14,21 @@ import {
 } from 'react-router-dom'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      apartments : []
+    }
+  }
+  componentDidMount(){
+    this.readApartments()
+  }
+  readApartments = () => {
+    fetch("/apartments")
+    .then(response => response.json())
+    .then(payload => this.setState({apartments: payload}))
+    .catch(errors => console.log('This is READ error', errors))
+  }
   render() {
     return (
         <Router>
@@ -22,7 +36,7 @@ class App extends Component {
           <br></br>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/apartmentindex" component={ApartmentIndex} />
+            <Route path="/apartmentindex" render={() => <ApartmentIndex apartments={this.state.apartments}/> }/>
             <Route path="/apartmentshow" component={ApartmentShow} />
             <Route path="/apartmentnew" component={ApartmentNew} />
             <Route path="/apartmentedit" component={ApartmentEdit} />
