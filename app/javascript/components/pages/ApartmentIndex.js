@@ -14,7 +14,6 @@ import { NavLink } from 'react-router-dom'
 export default class ApartmentIndex extends Component {
   render() {
     const { apartments } = this.props
-    console.log("props.apartments:", apartments);
     return (
       <>
         
@@ -26,15 +25,21 @@ export default class ApartmentIndex extends Component {
               <Card key={index}>
                 <CardImg className="card-image" top width="100%" src={apartment.image} alt="Card image cap" />
                 <CardBody>
+                  <h3>Address:</h3>
                   <CardTitle>{apartment.street}</CardTitle>
                   <CardSubtitle>{apartment.city}</CardSubtitle>
                   <CardText>{apartment.state}</CardText>
+                  <h3>Manager:</h3>
                   <CardText>{apartment.manager}</CardText>
+                  <h3>Monthly Rent:</h3>
                   <CardText>{apartment.price}</CardText>
+                  <h3>Bedrooms:</h3>
                   <CardText>{apartment.bedrooms}</CardText>
+                  <h3>Bathrooms:</h3>
                   <CardText>{apartment.bathrooms}</CardText>
+                  <h3>Pets Allowed:</h3>
                   <CardText>{apartment.pets}</CardText>
-                  <NavLink to={`/apartmentshow/${apartment.id}`}>
+                  <NavLink to={`/apartmentshow ${apartment.id}`}>
                   <Button>Click for details</Button>
                   </NavLink>
                 </CardBody>

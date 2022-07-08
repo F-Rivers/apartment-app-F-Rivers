@@ -12,7 +12,7 @@ apartments_array = [
     {
      street: '400 Blue Way',
      city: 'San Diego',
-     state: 'CA',
+     state: 'California',
      manager: 'Bruce Wayne',
      email: 'bruce@wayne.com',
      price: '$400',

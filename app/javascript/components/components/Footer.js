@@ -18,8 +18,8 @@ export default class Footer extends Component {
           fixed=""
           light
         >
-          <NavbarBrand to="/">
-            Wayne Enterprise
+          <NavbarBrand href="https://github.com/F-Rivers" className="nav-link">
+            F-Rivers Productions
           </NavbarBrand>
           <Collapse navbar>
             <Nav
@@ -27,15 +27,14 @@ export default class Footer extends Component {
               navbar
             >
               <NavItem>
-                <NavLink to='/'>
+                <NavLink to='/' className="nav-link">
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="https://github.com/F-Rivers">
-                  GitHub
-                </NavLink>
-              </NavItem>
+                <a href="https://www.linkedin.com/in/rivera-francisco/" className="nav-link">
+                  LinkedIn
+                </a></NavItem>
             </Nav>
           </Collapse>
         </Navbar>

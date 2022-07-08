@@ -20,10 +20,18 @@
     padding: 0;
     text-align: center;
   }
-  .page-body {
-    text-align: center;
-    margin: 3rem;
-    min-height: 50vh;
+
+  .header {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: left;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-;
+    padding-right: 50px;
   }
 
   .index-cards {
@@ -36,5 +44,6 @@
   
   .card-image {
     width: 300px;
+    background-color: grey;
     margin: 20px;
   }

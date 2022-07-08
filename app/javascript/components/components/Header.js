@@ -46,12 +46,12 @@ class Header extends Component {
             navbar
             >
               <NavItem>
-                <NavLink to="/">
+                <NavLink to="/" className="nav-link">
                   Home   
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/apartmentindex">
+                <NavLink to="/apartmentindex" className="nav-link">
                   See All 
                 </NavLink>
               </NavItem>
@@ -71,9 +71,9 @@ class Header extends Component {
                 </NavItem>
               }
               <NavItem>
-                <NavLink href="https://github.com/F-Rivers">
+                <a href='https://github.com/F-Rivers' className="nav-link">
                   My GitHub
-                </NavLink>
+                </a>
               </NavItem>
             </Nav>
           </Collapse>
