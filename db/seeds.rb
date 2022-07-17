@@ -19,7 +19,7 @@ apartments_array = [
      bedrooms: 5,
      bathrooms: 4,
      pets: 'yes',
-     image: 'https://i.pinimg.com/originals/50/ac/a9/50aca90deba96daee788802cf4aa02ff.jpg',
+     image: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/boardwalk-vintage-monopoly-board-game-theme-card-design-turnpike.jpg',
      user_id: 1
     },
     {
