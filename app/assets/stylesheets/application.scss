@@ -14,3 +14,36 @@
  *= require_self
  */
 @import 'bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .header {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: left;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-;
+    padding-right: 50px;
+  }
+
+  .index-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center; 
+    
+  }
+  
+  .card-image {
+    width: 300px;
+    background-color: grey;
+    margin: 20px;
+  }
